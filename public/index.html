@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="قطاع مساندة المحاكم والمتعاملين" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="apple-touch-icon" href="icon.png">
+    
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -19,9 +23,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>قطاع مساندة المحاكم والمتعاملين</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./assets/fonts/dinnext/Jf-flat.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <script defer src="./assets/fonts/fontawesome/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
   </head>
-  <body>
+  <body class="front-page font-body page-template">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -34,5 +44,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="./assets/js/vendor/jquery-3.3.1.min.js"><\/script>');
+    </script>
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- CHART JS -->
+    <script src="./assets/js/vendor/Chart.min.js"></script>
+    <script src="./assets/js/vendor/chartjs-plugin-style.min.js"></script>
+    <script src="./assets/js/vendor/circle-progress.min.js"></script>
+
+    <!-- sidebar collapse -->
+    <script src="./assets/js/sidebar/advertise.js"></script>
+
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+    
   </body>
 </html>
