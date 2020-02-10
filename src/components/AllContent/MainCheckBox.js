@@ -1,15 +1,17 @@
 import React from 'react';
 
-const MainCheckBox = ({cTitle, data_value, data_label, value, inputid}) => {
+const MainCheckBox = ({cTitle, data_value, value, inputid, onChangeDataValue}) => {
     return (
         <div className="checkbox-main">
             <label className="custom-control-label custom-control-label-notary"
                 data-value={data_value}
-                data-label={data_label}
                 htmlFor={inputid}> {cTitle}
                 <input type="radio" name="notary"
-                    className="custom-control-input" value={value}
-                    id={inputid} />
+                    className="custom-control-input" 
+                    value={value}
+                    id={inputid}
+                    onClick={() =>  onChangeDataValue(`${data_value}`)}
+                />
                 <span className="checkmark-main"></span>
             </label>
         </div>

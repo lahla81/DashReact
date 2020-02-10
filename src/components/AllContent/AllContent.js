@@ -1,14 +1,15 @@
 import React from 'react';
 import TopLeft from './TopLeft';
 import TopRight from './TopRight';
-import ChartsRow from './ChartsRow';
 
-const AllContent = () => {
+const AllContent = ({pageArray, onChangeDataValue}) => {
     return (
         <div className="row content-top-row">
-            <TopRight />
+            <TopRight 
+                pageArray={pageArray} 
+                onChangeDataValue={onChangeDataValue}
+            />
             <TopLeft />
-           <ChartsRow />
         </div>
     )}
 export default AllContent

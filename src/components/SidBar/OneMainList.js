@@ -1,6 +1,6 @@
 import React from 'react';
 
-function OneMainList({ title, mainHref, many, img, sub }) {
+function OneMainList({ title, mainHref, many, img, sub, onItemClick }) {
   return (
     many === true
         ?<li> 
@@ -21,7 +21,7 @@ function OneMainList({ title, mainHref, many, img, sub }) {
                                             value.subList.map((v, i) => {
                                                 return (
                                                     <li key={i}>
-                                                        <a href={`${v.link}.html`}>{v.title}</a>
+                                                        <button className="btn" onClick={() => onItemClick(`${v.link}`)}>{v.title}</button>
                                                     </li>
                                                 )
                                             })
@@ -30,7 +30,7 @@ function OneMainList({ title, mainHref, many, img, sub }) {
                                 </li>
                                 :sub[index].list === 0
                                 ?<li key={index}>
-                                    <a href={`${sub[index].mainLink}.html`}>{sub[index].sub0}</a>
+                                    <button className="btn" onClick={() => onItemClick(`${sub[index].mainLink}`)}>{sub[index].sub0}</button>
                                 </li>
                                 : null
                             )
@@ -40,10 +40,10 @@ function OneMainList({ title, mainHref, many, img, sub }) {
             }
         </li>
         :<li>
-            <a href={`${mainHref}.html`} >
+            <button className="btn" onClick={() => onItemClick(`${mainHref}`)} >
                 <img src={img} alt={mainHref} />
                 <span>{title}</span>
-            </a>
+            </button>
         </li>
     );
 }

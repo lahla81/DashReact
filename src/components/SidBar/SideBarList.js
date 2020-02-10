@@ -124,7 +124,7 @@ const SideBarList = [
           ]
         },
         {
-          sub0: 'مشاريع ادارة خدمة المتعاملين',
+          sub0: 'مشاريع ادارة إسعاد المتعاملين',
           mainLink: 'currentProject',
           list: 1,
           subList : [
@@ -193,6 +193,15 @@ const SideBarList = [
     {
       key: 3,
       many: false,
+      title: 'قسم رقابة رسوم وتأمينات القضايا',
+      mainHref: 'control',
+      href:[],
+      sub:[],
+      img: LookImg
+    },
+    {
+      key: 4,
+      many: false,
       title: 'مركز رؤية المحضونين',
       mainHref: 'look',
       href:[],
@@ -200,7 +209,7 @@ const SideBarList = [
       img: LookImg
     },
     {
-      key: 4,
+      key: 5,
       many: true,
       sections: 7,
       title: 'ادارة خدمات المحاكم',
@@ -269,9 +278,9 @@ const SideBarList = [
       img: ServicesImg
     },
     {
-      key: 5,
+      key: 6,
       many: true,
-      title: 'ادارة خدمة المتعاملين',
+      title: 'ادارة إسعاد المتعاملين',
       mainHref: 'peopleserv',
       sub: [ 
         {
@@ -280,7 +289,7 @@ const SideBarList = [
           list: 0
         }, 
         {
-          sub0:'قسم الإستعلامات وخدمات الجمهور',
+          sub0:'قسم مراكز خدمة وإسعاد المتعاملين',
           mainLink: 'audiance_inq',
           list: 0
         }, 
@@ -293,7 +302,7 @@ const SideBarList = [
       img: PeopleservImg
     },
     {
-      key: 6,
+      key: 7,
       many: true,
       title: 'ادارة شؤون المحاماة والخبراء',
       mainHref: 'lawyer',
@@ -342,7 +351,7 @@ const SideBarList = [
       img: LawyerImg
     },
     {
-      key: 7,
+      key: 8,
       many: true,
       title: 'ادارة الكاتب العدل والتوثيق',
       mainHref: 'auth',
@@ -376,7 +385,7 @@ const SideBarList = [
       img: AuthImg
     },
     {
-      key: 8,
+      key: 9,
       many: false,
       title: 'الاعدادات',
       mainHref: 'sitting',

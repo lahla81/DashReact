@@ -8,7 +8,7 @@ const ShowMethod = ({labelClass, inputId, smallType, labelId}) => {
                     htmlFor={inputId} id={labelId}>
                     <input type="radio" name="checkbox-small"
                         className="custom-control-input"
-                        id={inputId} checked/>
+                        id={inputId} />
                     <span className="checkmark-small"></span>
                 </label>                                            
             </div>

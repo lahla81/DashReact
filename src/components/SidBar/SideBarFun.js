@@ -2,7 +2,7 @@ import React from 'react';
 import OneMainList from './OneMainList';
 
 
-function SideBarFun ({ SideBarList }) {
+function SideBarFun ({ SideBarList, onItemClick }) {
   return (
     <ul className="list-unstyled components p-0">
         {
@@ -16,6 +16,7 @@ function SideBarFun ({ SideBarList }) {
                         many={SideBar.many}
                         href={SideBar.href}
                         sub={SideBar.sub}
+                        onItemClick = {onItemClick}
                     />
                 )
             })
